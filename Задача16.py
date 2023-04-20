@@ -3,3 +3,19 @@
 # В последующих  строках записаны N целых чисел Ai. 
 # Последняя строка содержит число X
 
+n = int(input("Введите размер массива: "))
+x = int(input("Введите целое число: "))
+a = 0
+
+array = []
+
+for i in range(1, n+1):
+    array.append(i)
+
+for i in array:
+    if(x == i):
+        a+=1
+
+
+print(*array)
+print(f"------> {a}")
